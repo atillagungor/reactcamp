@@ -1,5 +1,6 @@
 import React from "react";
-import { Menu } from "semantic-ui-react";
+import { NavLink } from "react-router-dom";
+import { Menu } from 'semantic-ui-react'
 
 export default function Categories() {
   return (
@@ -7,6 +8,7 @@ export default function Categories() {
       <Menu pointing vertical>
         <Menu.Item
           name="home"
+          as={NavLink} to="/" 
         />
         <Menu.Item
           name="messages"

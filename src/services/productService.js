@@ -1,6 +1,11 @@
-import axios from "axios";
+import axios from "axios"
+
 export default class ProductService{
-    getProducts(){
-        return axios.get("https://jsonplaceholder.typicode.com/todos/1")
+     getProducts(){
+         return axios.get("https://dummyjson.com/products")
+     }
+
+     getByProductId(productId){
+        return axios.get("https://dummyjson.com/products/"+ productId)
     }
 }
